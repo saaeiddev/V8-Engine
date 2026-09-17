@@ -140,8 +140,8 @@ function updateMainScene() {
 
   const runButton = document.getElementById('toggleRun');
   const running = !!runButton && /Running/i.test(runButton.textContent || '');
-  const targetRpm = running ? 300 : 0;
-  state.rpm = lerp(state.rpm, targetRpm, 1 - Math.exp(-dt * 3.5));
+  const targetRpm = running ? 45 : 0;
+  state.rpm = lerp(state.rpm, targetRpm, 1 - Math.exp(-dt * 1.5));
   if (state.rpm > 0.05) state.cycle = (state.cycle + state.rpm / 60 * 360 * dt) % 720;
 
   const rpmReadout = document.getElementById('rpmReadout');
