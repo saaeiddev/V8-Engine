@@ -206,7 +206,7 @@ function updateMainScene(){
   state.lastTime=now;
 
   const runButton=document.getElementById('toggleRun');
-  const running=!!runButton && /Running/i.test(runButton.textContent||'');
+  const running=!!runButton && /^\s*❚❚/.test(runButton.textContent||'');
   const target=running?DEMO_RPM:0;
 
   // Soft acceleration/deceleration avoids the abrupt, mechanical-looking snap
