@@ -252,6 +252,8 @@ function installStyles() {
     .language-switch{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(5,12,18,.56);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);flex:0 0 auto}
     .language-switch button{appearance:none;border:0;background:transparent;color:rgba(224,241,250,.66);font:700 10px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.04em;padding:6px 8px;border-radius:999px;cursor:pointer;transition:.2s ease;white-space:nowrap}
     .language-switch button.active{background:rgba(45,181,255,.18);color:#e9f8ff;box-shadow:inset 0 0 0 1px rgba(78,193,255,.28)}
+    .lang-fa{font-family:"Vazirmatn",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .lang-fa button,.lang-fa input,.lang-fa select,.lang-fa textarea{font-family:"Vazirmatn",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     .lang-fa .intro p,.lang-fa .quote,.lang-fa .info-panel,.lang-fa .section-heading,.lang-fa .combustion-copy,.lang-fa .anatomy-grid article{direction:rtl}
     .lang-fa .intro p,.lang-fa .quote,.lang-fa .info-panel p,.lang-fa .section-heading p,.lang-fa .combustion-copy p,.lang-fa .anatomy-grid article p{text-align:right}
     .lang-fa .system-card b,.lang-fa .system-card small,.lang-fa .engine-label{direction:rtl}
