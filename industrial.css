@@ -1,0 +1,43 @@
+/* Presentation-only industrial theme. Mechanics and interaction code are unchanged. */
+:root{--bg:#0b0b0c;--bg2:#151516;--panel:rgba(24,24,25,.96);--panel2:#222223;--line:#ffffff24;--line2:#ffffff40;--blue:#ff6a18;--blue2:#ff934e;--cyan:#ffc49e;--text:#f6f4f1;--muted:#b3b0ad;--muted2:#92908d;--cut:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);--display:'Oxanium','Vazirmatn',sans-serif}
+body{background:radial-gradient(ellipse at 48% 12%,#30251d 0,transparent 42%),#0b0b0c;color:var(--text)}
+.ambient{display:none}
+.topbar{background:rgba(14,14,15,.96);border-bottom:1px solid #ff6a1855;box-shadow:0 4px 28px #0006}
+.brand,h1,h2,h3,button,.rpm-card strong,.stats-row b,.phase-display,.ring-center strong{font-family:var(--display)}
+.brand{font-weight:800;letter-spacing:2px}.brand span{color:#ff6a18}nav a{color:#c3bfba}nav a:hover{color:#ff934e}
+.intro h1{font-size:clamp(32px,2.85vw,46px);line-height:1.07;letter-spacing:-1.4px;font-weight:800}
+.eyebrow,.section-heading span,.panel-kicker{color:#ff914c;letter-spacing:1.8px}
+.quote{color:#a6a09b}.intro p{color:#bcb6b0}
+/* A chamfered face, a bright top bevel and a deep lower edge create physical keys. */
+body button{border-radius:0;clip-path:var(--cut);background:linear-gradient(155deg,#363638,#1d1d1e 65%);border:1px solid #68615c;color:#f5f2ee;box-shadow:inset 0 2px 0 #ffffff24,inset 0 -5px 0 #0009;transition:transform .18s,background .18s,border-color .18s;cursor:pointer}
+body button:hover{background:linear-gradient(155deg,#4c3b2e,#2d231d);border-color:#ff934e;transform:translateY(-2px);color:#fff}
+body button:active{transform:translateY(2px);box-shadow:inset 0 1px 3px #000a,inset 0 -1px 0 #ffffff18}
+body button:focus-visible{outline:0;background:#663019;border-color:#fff;box-shadow:inset 0 0 0 3px #fff,inset 0 0 0 5px #ff6a18}
+body button.primary,body button.active,body .viewer-toolbar button.active,body .combustion-controls button.active,body .language-switch button.active{background:linear-gradient(145deg,#ffac65,#ff721f 52%,#e6500b);color:#17100b;border-color:#ffbd86;box-shadow:inset 0 2px 0 #ffe4cb99,inset 0 -5px 0 #9d350b;font-weight:800}
+.primary{padding:15px 20px}.round{width:46px;height:46px}.ghost{padding:11px 15px}
+.viewer-shell,.combustion-viewer{border-radius:3px;border:1px solid #77706a;background:radial-gradient(ellipse at 50% 40%,#39291e55,transparent 60%),linear-gradient(145deg,#1b1b1c,#09090a 80%);box-shadow:inset 0 2px 0 #ffffff1c,0 20px 55px #0008}
+.viewer-shell:after{background:linear-gradient(90deg,transparent,#ff721f,transparent);box-shadow:0 0 38px 13px #ff6a1817}
+.viewer-shell:before{background-size:36px 36px}
+.info-panel,.technical-card,.tech-diagram,.phase-metrics div,.firing-note,.anatomy-grid article,.stats-row{border-radius:2px;background:linear-gradient(140deg,#242425,#131314);border-color:#ffffff24;box-shadow:inset 0 1px 0 #ffffff0d}
+.info-panel{border-top:3px solid #ff6a18}.info-panel h2{font-size:24px}.technical-card{background:#101011}
+.tech-diagram{background:radial-gradient(circle,#4b2d1c,#191513 55%,#101011)}.tech-diagram:before,.tech-diagram:after{background:#ff934e24}.pulse-ring{border-color:#ff8436;box-shadow:0 0 30px #ff6a1826}.pulse-core{background:#ff934e;box-shadow:0 0 24px #ff6a18}
+.tech-row{border-color:#ffffff14}.tech-row span,.rpm-card span,.phase-display small,.phase-metrics span{color:#aaa49f}.tech-row b{color:#eee9e4}
+.viewer-badge,.combustion-badge{border-radius:0;clip-path:var(--cut);background:#151515e8;border-color:#74614e;color:#ffc093}
+.viewer-badge i,.combustion-badge i{background:#ff7b2c;box-shadow:0 0 12px #ff7b2c}
+.rpm-card{border-radius:0;background:#141414ed;border-color:#77706a;border-right:3px solid #ff6a18}.rpm-card small{color:#ff914c}.rpm-card strong{font-variant-numeric:tabular-nums}
+.viewer-toolbar{border-radius:2px;background:#111112eb;border-color:#6b5f54;padding:8px 8px 11px;gap:6px;max-width:calc(100% - 20px)}.viewer-toolbar button{padding:11px 12px;flex-shrink:0;border-color:#625b55}.viewer-hint{color:#aaa29b}
+.engine-label{border-radius:1px;background:#161413eb;border-color:#ff934e88;color:#ffe7d7}.engine-label:after{background:linear-gradient(#ff914c,transparent)}
+.loading{background:linear-gradient(#1c1b1a,#0b0b0c);color:#ffac73}.loading span{color:#a59d95}.spinner{border-color:#4a3628;border-top-color:#ff7b2c}
+.system-card{clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px);min-height:128px;padding:17px}
+.system-card:before{border-radius:0;width:38px;height:3px;right:12px;top:12px;background:#ff6a18;opacity:.5}
+.system-card .sys-icon{border-radius:0;background:#191513;border-color:#826044;color:#ff934e}
+.system-card small,.phase-tabs small{color:#b9b1aa}.system-card.active small{color:#392216}.system-card.active .sys-icon{background:#1b1511;color:#ffa66b;border-color:#743b16}
+.section-heading h2{letter-spacing:-.7px}.systems-wrap,.combustion-section,.architecture{border-top:1px solid #ffffff1c;padding-top:26px}
+.cycle-ring{background:conic-gradient(#ff7b2c var(--progress,0%),#363230 var(--progress,0%));box-shadow:0 0 35px #ff6a1814}.cycle-ring:before{background:#141414}.ring-center span{color:#b2aba5}
+.phase-metrics b,.firing-note b{color:#ffb078}.phase-tabs button{padding:13px 15px}.phase-tabs button.active>span,.phase-tabs button.active small{color:#392216}.phase-tabs button>span{color:#ffab70}
+.anatomy-grid article{border-top:2px solid #72645a}.anatomy-grid article>span{color:#ff934e;font-family:var(--display);font-size:14px}.stats-row{border-top:3px solid #ff6a18}.stats-row b{color:#faf6f1}.stats-row span{color:#b6ada6}
+footer{border-color:#ffffff21;color:#aaa29b}
+body .language-switch{border-radius:0;background:#181819;border-color:#625b55}body .language-switch button{font-family:var(--display);border-radius:0;padding:8px 9px;color:#eee7e1}
+.lang-fa h1,.lang-fa h2,.lang-fa h3{font-family:'Vazirmatn',sans-serif;letter-spacing:0}.lang-fa .intro h1{line-height:1.3}
+@media(max-width:650px){.topbar{padding-inline:12px;gap:8px}.brand{font-size:15px;letter-spacing:1px}.header-tools{gap:5px}.ghost{padding:10px}.intro h1{font-size:36px}.viewer-shell,.combustion-viewer{border-radius:2px}.viewer-toolbar{max-width:none}.viewer-toolbar button{padding:11px 10px}.eyebrow{font-size:10px;letter-spacing:1.2px}body .language-switch button{padding:7px 6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body button{transition:none}.pulse-ring{animation:none}}
